@@ -1,0 +1,592 @@
+/*=======================================================
+            Common Style
+========================================================*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    color: #6666;
+    font-family: Georgia,  sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*=========================================================
+            Top Header Area 
+===========================================================*/
+
+.header_area{
+    width: 100%;
+    clear: both;
+}
+
+#top_header_area{
+    background-color: #ba2e1f;
+    padding: 15px 0px;
+    width: 100%;
+}
+
+.inner_top_area{
+    overflow: hidden;
+}
+
+.mini_menu{
+    float: left;
+    width: 70%;
+    padding-top: 5px;
+}
+
+.mini_menu ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+.mini_menu ul li{
+    display: inline-block;
+    margin-right:20px;
+    position: relative;
+}
+
+.mini_menu ul li::after{
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    height: 12px;
+    width: 1px;
+    top: 6px;
+    right: -10px;
+}
+
+.mini_menu ul li:last-child::after{
+    display: none;
+}
+
+.mini_menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.mini_menu ul li a:hover{
+    transition: 0.3s;
+    color: #ddd;
+}
+
+.search_area{
+    float: right;
+    width: 30%;
+}
+
+.search_area form{
+    background-color: #fff;
+    float: right;
+    max-width: 210px;
+    width: 96%;
+    border-radius: 25px;
+    padding: 2%;
+}
+
+.search_area input{
+    border: 0px solid;
+    float: left;
+    width: 75%;
+    padding: 1%;
+    color: #000;
+}
+
+.search_area input[type = "button"]{
+    background: url(/assets/search.png) no-repeat;
+    background-position: right;
+    float: right;
+    width: 23%;
+    cursor: pointer;
+}
+
+/*==================================================================
+             Main Header Area
+===================================================================*/
+.main_header_area{
+    width:100%;
+    clear: both;
+}
+
+.inner_main_area{
+    padding: 40px 0px;
+    overflow: hidden;
+}
+
+.logo_area{
+    float: left;
+    width: 240px;
+}
+
+
+.social_icon_area{
+    float: right;
+    max-width: 600px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.social_icon_area ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: right;
+}
+
+.social_icon_area ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.social_icon_area ul li:first-child{
+    margin-left: 0px;
+}
+
+.social_icon_area ul li a{
+    display: block;
+    text-decoration: none;
+}
+
+.social_icon_area ul li a i{
+    background-color: #313131;
+    color: #fff;
+    display: block;
+    border-radius: 50%;
+    width: 35px;
+    padding-top: 8px;
+    height: 32px;
+    text-align: center;
+}
+
+.social_icon_area ul li a:hover i{
+    background-color: #ba2e1f;
+    transition: 0.5s;
+}
+
+.social_icon_area ul li a:hover i.fa-linkedin-in{
+    background-color: #067bb6;
+    transition: 0.5s;
+
+}
+
+.social_icon_area ul li a:hover i.fa-twitter{
+    background-color: #37b1e2;
+    transition: 0.5s;
+
+}
+
+.social_icon_area ul li a:hover i.fa-pinterest-square{
+    background-color: #d43a34;
+    transition: 0.5s;
+
+}
+
+.social_icon_area ul li a:hover i.fa-google-plus-g{
+    background-color: #eb3f3a;
+    transition: 0.5s;
+
+}
+
+.social_icon_area ul li a:hover i.fa-rss{
+    background-color: #f0812f;
+    transition: 0.5s;
+
+}
+/*==================================================================
+                Navbar Menu Area
+===================================================================*/
+
+.inner_menu {
+    background: #343434;
+    position: relative;
+    min-height:30px ;
+    padding: 15px 0px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.inner_menu::after {
+    background:#2b2b2b;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    border-radius: 5px;
+}
+
+.inner_menu ul {
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+  
+.inner_menu ul li {
+    display: inline-block;
+    margin: 0px 5px;
+    position: relative;
+}
+.inner_menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 5px;
+}
+
+/*Dropdown menu*/
+#main_menu ul  ul {
+    background: #ba2e1f;
+    color: #fff;
+    position: absolute;
+    width: 180px;
+    top: 33px;
+    left:-99999px;
+}
+#main_menu ul li:hover  ul {
+    left:0px;
+}
+
+#main_menu ul li:hover  ul ul {
+    left:-99999px;
+}
+
+#main_menu ul li:hover  ul li:hover ul {
+    left:180px;
+}
+
+
+#main_menu ul  ul ul {
+    top: 0px;
+    /* left:180px; */
+    left:-99999px;
+}
+
+#main_menu ul  ul li {
+    margin: 0px;
+    display: block;
+}
+
+/*Hover Solution*/
+
+/*first ul li a hover solves the hover problem of main menu */
+#main_menu ul li a:hover{
+    color: #ba2e1f;
+    cursor: pointer;
+}
+/*It solves the text will selected in main menu when it will hover and show the first sub menu*/
+#main_menu ul li:hover  a{
+    color: #ba2e1f;
+    cursor: pointer;
+}
+
+/*when ul li hover,it  solves the hover problem of first sub menu text color*/
+#main_menu ul li:hover ul li a{
+    color: #fff;
+  
+}
+/*It solves the first sub menu hoverable background color and text color*/
+#main_menu ul ul li a:hover{
+    color: #fff;
+    background-color: #313131;
+}
+/*It solves second sub menu select */
+#main_menu ul ul  li:hover  a{
+    color: #fff;
+    background-color: #313131;
+}
+#main_menu ul ul  li:hover ul li a{
+    color: #fff;
+    background: none;
+}
+#main_menu ul ul  li ul li a:hover{
+    color: #fff;
+    background:#313131;
+}
+
+/*==================================================================
+                Slider Area
+===================================================================*/
+
+#slider_area{
+    max-width: 100%;
+    padding-top: 10px;
+    clear: both;
+
+}
+.carousel-item img{
+    max-width: 1370px;
+    width: 100%;
+    height:350px;
+}
+
+/*==================================================================
+                    Hero Area
+====================================================================*/
+#hero_area{
+    clear: both;
+}
+.hero_img{
+    max-width: 400px;
+    width: 100%;
+    height: 440px;
+}
+.hero_des {
+    padding-top: 100px;
+    padding-left: 30px;
+}
+.hero_des h1{
+    font-size: 86px;
+    font-weight: normal;
+    color: #000;
+    text-transform: uppercase;
+}
+.hero_des p{
+    font-size: 16px;
+    font-weight: normal;
+    color: #666666;
+    text-transform: capitalize;
+}
+.hero_des a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: normal;
+    color: #ba2e1f;
+    text-transform: uppercase;
+    float: right;
+}
+.hero_des a i{
+    font-size: 9px;
+    margin-left: 4px;
+}
+.hero_des a:hover{
+    color: #343434;
+    transition: 0.5s;
+}
+
+/*==================================================================
+                    Work Area
+====================================================================*/
+
+#work_area {
+    background-color: #f2f2f2;
+}
+.inner_work {
+    overflow: hidden;
+}
+/*child_work class works if bootstrap is not used in the site for resposiveness*/
+/* .child_work{
+    width: 31%;
+    float: left; 
+    margin: 0 1% 10px;
+} */
+
+.child_work h2{
+    color: #333333;
+    font-size: 26px;
+    font-weight: normal;
+}
+.child_work p{
+    color: #888888;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4em;
+}
+.child_work a{
+    clear: both;
+    float: right;
+    display: block;
+    color:#ba2e1f;
+    text-decoration: none;
+}
+.child_work a i{
+    margin-left: 3px;
+    color:#ba2e1f;
+    font-size: 8px;
+}
+.child_work a:hover{
+    color: #313131;
+    transition: 0.5s;
+}
+.about_area{
+    margin-left: 0px;
+    float: left;
+}
+.about_area img{
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+    margin-bottom: 15px;
+    width: 95%;
+}
+.child_service{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.service_image{
+    width: 25%;
+    float: left;
+}
+
+.service_text {
+    width: 75%;
+    float:right;
+
+}
+.service_text h3{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: #878787;
+    font-size: 15px;
+    font-weight: normal; 
+}
+.testimonial_area{
+    margin-right: 0px;
+}
+.child_testimonial_area{
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+
+}
+.child_testimonial_area h3{
+    background: url(/assets/quote.jpg) no-repeat;
+    background-position:left;
+    padding: 15px 0px 14px 65px;
+    color: #989898;
+    font-size: 16px;
+    font-weight: bold;
+}
+.child_testimonial_area h3 span{
+    font-weight: normal;
+}
+.child_testimonial_area p{
+    font-size: 14px;
+    text-align: justify;
+}
+
+/*============================================================
+                Footer Area
+============================================================*/
+#footer_area{
+    padding: 45px 0px;
+}
+.inner_footer{
+    overflow: hidden;
+}
+.child_top_footer_area h2{
+    border-top: 1px solid #696969;
+    color:#666666;
+    font-size: 17px;
+    font-weight: normal;
+    margin-top: 0px;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+.child_top_footer_area p{
+    color: #666666;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.4em;
+}
+.child_top_footer_area p a{
+    color: #ba2e1f;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+}
+.child_top_footer_area .footer_link ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float:left;
+}
+.child_top_footer_area .footer_link ul li{
+    text-align: left;
+    border-bottom: 1px dotted #676767;
+    padding: 4px 0px;
+}
+.child_top_footer_area .footer_link ul li:last-child{
+   border-bottom: 0;
+}
+.child_top_footer_area .footer_link ul li a{
+    text-decoration: none;
+    color: #666666;
+    font-size: 14px;
+    font-weight: normal;
+    display: block;
+}
+.child_top_footer_area .footer_link ul li a i{
+  font-size: 7px;
+  margin-right: 10px;
+}
+.footer_blog{
+    overflow: hidden;
+}
+.child_blog{
+    overflow: hidden;
+}
+.child_blog h3{
+    font-size: 17px;
+    font-weight: normal;
+    color: #666666;
+}
+.child_blog h4{
+    font-size: 14px;
+    font-weight: normal;
+    color: #666666;
+}
+.child_blog h4 span{
+    font-weight: 200;
+    color: #ba2e1f;
+}
+.child_blog h6{
+    color: #666;
+    font-size: 14px; 
+}
+.child_blog a{
+  clear: both;
+  float: right;
+  display: block;
+  text-decoration: none;
+  color: #ba2e1f;
+}
+.child_blog a:hover{
+    color: #313131;
+    transition: 0.5s;
+}
+.child_blog a i{
+    font-size: 8px;
+    margin-left: 8px;
+}
+.footer_contact{
+    overflow: hidden;
+}
+
+.form-group .btn{
+    color: #ba2e1f;
+}
+.form-group .btn:hover{
+    background-color: #343434;
+    color: #fdfdfd;
+    transition: 0.5s;
+}
+#copyWriteFooter{
+    overflow: hidden;
+}
+.copywriteTxt p{
+    color: #919191;
+    font-size: 14px;
+}
