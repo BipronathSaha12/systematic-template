@@ -13,7 +13,7 @@ Visit the link:
 
 ### OS Template PSD file link
 
-- Click on this link: [Systematic Free PSD Template Link](https://bit.ly/Systematic-Tmplate-PSD-link
+- Click on this link: [Systematic Free PSD Template Link](https://bit.ly/Systematic-Tmplate-PSD-link)
 
 ### Documentation
 Click these link to check the documentation: 
